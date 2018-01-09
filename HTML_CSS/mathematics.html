@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>
+		Torben Hansen
+	</title>
+	<meta name="keywords" content="Torben Hansen, Cryptology, Aarhus University, Mathematics" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body text="black" link="blue" vlink="blue"> 
+	<table width="100%">
+		<tr>
+		<td  algin="center"><center><h1></h1>
+		</center>
+		<br>
+		<br>
+		</td>
+		</tr>
+	</table>
+	<table style="border:0;" valign="top" width="100%"" cellpadding="9" cellspacing="0" bgcolor="#FFFFFF">
+		<tr>
+		
+		<td id="navig" width="1%" style="border-right:0;border-left:0;border-top:0;border-bottom:0;" valign="top">
+		<div class=navig>
+			<table  style="border-right: 2px solid #000000;padding-right: 10px">
+				<td><br></td>
+				<tr><td nowrap><b> </b></td></tr>
+				<tr><td nowrap><a href="./index.html">Index</a></td></tr>
+				<tr><td nowrap><a href="./studies.html">Studies</a></td></tr>
+				<tr><td nowrap><a href="./teaching.html">Teaching</a></td></tr>
+				<tr><td nowrap></td></tr>
+				<tr><td nowrap></td></tr>
+				<tr><td nowrap><b>Notes:</b></td></tr>
+				<tr><td nowrap><a href="./cryptology.html">Cryptology</a></td></tr>
+				<tr><td nowrap><a href="./mathematics.html">Mathematics</a></td></tr>
+				<tr><td nowrap><a href="./programming.html">Programming</a></td></tr>
+				<tr><td nowrap><a href="./articles.html">Articles</a></td></tr>
+				<tr></tr>
+				<td><br></td>
+			</table>
+		</div>
+		</td>
+		<td id="content" style="border-left:0;border-right:0;border-top:0;border-bottom:0;padding-left:50px;text-align:left;" valign="top" bgcolor="#FFFFFF">
+		<h2>Eratosthenes Sieve</h2>
+		<p>
+			I have done some work on Eratosthenes sieve and in that connection made a few implementations. Here is a <a href="era_sieve.c">C</a> implementation and a 
+			<a href="EratosthenesSieve.java">Java</a> implementation. Currently(12-10-2012) the Java implementation is more efficient than the C implementation! I have also 
+			implemented a parallel version  <a href="bspEraSieve.c">download</a> with which I in connection wrote the following paper <a href="Project1_parallel_algorithms_Torben.pdf"> 
+			download <a/>(pdf). You need a distribution of the BSP library (and linux), on my laptop I use MulticoreBSP for C developed by Albert-Jan Yzelmann 
+			<a href="http://www.multicorebsp.com/">http://www.multicorebsp.com/</a>.
+		</p>   
+
+		<h2 id="pad">Tropical Varieties</h2>
+		<p>
+			Consider the ordinary real numbers R and the usual operations +,* which makes R into a ring. Instead of going further, consider instead the following operations 
+			a +' b = min{a,b} and a *' b = a + b i.e. addition is taking minimum and multiplication is doing normal addition. One can then show that +' and *' define a semigroup 
+			on R union with infinity. The infinity element is the neutral element for the addition +'. This is the foundation of Tropical geometry. The following project, written 
+			in connection with a course on algebra & polyhedral geometry, gives a gentle introduction to tropical varieties and some computational aspects of these. 
+			<a href="MeasurePoint_Algebra_and_Polyhedral_Geometry_Torben.pdf"> Download </a>(pdf).
+		</p>    
+
+		<h2 id="pad">Rational monic polynomials</h2>
+		<p>
+			Following write-up is a consequence of a challenge given by Niels Lauritzen in the course <i>advanced algebra</i>. The theorem says that if the product, of (a priori) 
+			two monic rational polynomials, has only integer coefficients, then the two polynomial factors must actually be integer polynomials. Note that the write-up is in Danish. 
+			<a href="Rationelle_moniske_polynomier_og_et_specialtilfælde.pdf">Download</a>(pdf).
+		</p>     			
+		
+		<h2 id="pad">Factoring and seiving</h2>
+		<p>
+			Everybody (at least a mathematician) probably knows the sieve of Erastothenes; let A be the integers from 2 to some limit n then<br /><br />
+			do{take next uncrossed number in A and cross out all strict multiples of this number} <br />
+			while(next uncrossed number is smaller than n). <br /><br />
+			This is (maybe) the best known sieve out there, but there exists several other usable sieves e.g. to find smooth numbers. This kind of sieving is used in a 
+			factorization method known as the quadratic sieve factorization method. The basic fact that this algorithm uses is work by Fermat; if n is odd there exists a,b 
+			such that n=a^2-b^2. In the following project, which was written in connection with a course on number theory, I investigate the quadratic sieving factorization 
+			algorithm and the theory behind some of the concepts used. <a href="MeasurePoint_Number_Theory_Torben.pdf">Download</a>(pdf).
+		</p>
+		
+		</tr>
+	</table>
+</body>
+</html>
